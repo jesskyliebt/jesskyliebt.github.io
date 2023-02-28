@@ -1,0 +1,70 @@
+body {
+  margin: auto;  
+}
+
+.opacity {
+  background: rgba(197,55,131,0.3)
+  /* background-color:black; */
+}
+
+#logo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  opacity: 1;
+}
+
+header {
+  background: rgba(197,55,131);
+  position:static;
+  height: 200px;
+}
+
+h2 {
+  font-family:cursive;
+  text-align: center;
+  font-size: 80px;
+  margin-top: 150px;
+}
+
+#header1 {
+  text-align:center;
+  font-family: cursive;
+  font-size: 50px;
+  font-weight:bolder;
+  color:black;
+  top:10px;
+}
+
+.fa {
+  padding: 5px;
+  width: 20px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.fa-facebook {
+  color: white; 
+}
+  
+.fa-instagram {
+  color: #fff;  
+}
+
+footer {
+  background-color:#C53783;
+  bottom:0;
+  position:fixed;
+  width: 100%;
+}
+
+#footer {
+  text-align: center;
+  font-size:25px;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+  font-family: cursive;
+}
