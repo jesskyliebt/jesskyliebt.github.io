@@ -7,7 +7,7 @@ body {
 }
 
 #logo {
-  position: fixed;
+  position:fixed;
   top: 0;
   left: 0;
   opacity: 1;
@@ -15,7 +15,7 @@ body {
 
 header {
   background: rgba(197,55,131);
-  position: static;
+  position:static;
   height: 200px;
 }
 
