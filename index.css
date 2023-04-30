@@ -1,78 +1,80 @@
-* {
-  margin: 0;
-}
-
-body {
-	background-color: #c536834d;
-	font-family: 'luckiest guy';
-
-}
-header {
-	background-color: #C53683;
-	color: white;
-	display: flex;
-	align-items: center;
-	/* padding: 10px; */
-}
-.logo {
-	flex: 1;
-}
-
-nav {
-	flex: 2;
-	/* text-align: center; */
-  	/* align-items: center; */
-}
-nav ul {
-	list-style: none;
+/* Main */
+html body {
 	margin: 0;
-	padding: 0;
-}
-nav li {
-	display: inline-block;
-	margin-right: 20px;
-}
-nav a {
-	color: white;
-	text-decoration: none;
-	font-size: 20px;
-}
-
-h2 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 70vh;
-    font-family: 'luckiest guy';
-    font-size: 40px;
-    font-weight: bolder;
-    text-align: center;
-}
-footer {
-	background-color: #C53683;
-	color: white;
-	text-align: center;
-	padding: 5px;
-	position:absolute;
-	bottom: 0;
-	right: 0;
-    left: 0;
-    /* font-size: 20px; */
-
-}
-
-.social-media {
-    font-size: 30px;
-}
-
-.fa {
-    padding: 5px;
-    /* width: 40px; */
-    text-align: center;
-    text-decoration: none;
-    color: white;
+	font-family: 'luckiest guy'; 
+	/* height: 100%; */
   }
 
-.copyright {
-    font-size: 15;
+  /* wrapper of all content except footer */
+  .wrapper {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+
+/* Main content */
+  main {
+	background-color: #c536834d;
+	flex: 1;
+  }
+
+  /* Navigation and Offcanvas Navigation */
+  .fixed-top {
+	height: 90px;
+	display: block; 
+  }
+  
+
+  .text-outline {
+    -webkit-text-stroke: 2px white;
+    text-stroke: 2px white;
+    -webkit-text-fill-color: black;
+    text-fill-color: black;
+  }
+
+ 
+
+  /* Media queries for responsiveness */
+@media only screen and (max-width: 768px) {
+  /* Adjust the height of the navigation bar for smaller screens */
+  .fixed-top {
+      height: 60px;
+  }
+
+  /* Adjust the font size of the business name heading */
+  .display-1 {
+      font-size: 3rem;
+  }
+
+  /* Adjust the padding for the business name heading */
+  .mt-5 {
+      margin-top: 3rem !important;
+  }
+
+  /* Adjust the font size of the "In Development" message */
+  .display-1.text-outline {
+      font-size: 2rem;
+  }
+
+  /* Adjust the font size of the social media buttons */
+  .fs-3 {
+      font-size: 2rem !important;
+  }
+
+  /* Adjust the font size of the copyright notice */
+  .text-light {
+      font-size: 0.8rem;
+  }
+
+  img {
+    height: 50px;
+    width: 60px;
+  }
+}
+
+@media only screen and (min-width: 769px) {
+  /* Adjust the padding for the business name heading */
+  .mt-5 {
+      margin-top: 5rem !important;
+  }
 }
